@@ -1,0 +1,638 @@
+@font-face {
+    font-family: archi;
+    src: url(./archia-light-webfont.woff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+body{
+    cursor: none;
+}
+
+.cursor{
+    width: 2vmin;
+    height: 2vmin;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 9;
+    mix-blend-mode: difference;
+    /* color: white; */
+}
+
+.nav{
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: relative; */
+    position: fixed;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+
+.nav > i{
+    mix-blend-mode: difference;
+    color: white;
+    display: none;
+    margin-right: 10vmax;
+    font-size: 30px;
+    /* margin-top: 10vmax; */
+}
+
+.logo{
+    /* background-color: lightcoral; */
+    margin-left: 10vmax;
+}
+
+.logo > img{
+    height: 30px;
+    mix-blend-mode: difference;
+}
+
+.span{
+    width: 40%;
+    height: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 14vmax;
+    /* mix-blend-mode: difference; */
+}
+
+.span > span{
+    font-size: 11px;
+    font-family: "gilroy";
+    font-weight: 900;
+    mix-blend-mode: difference;
+    color: white;
+    letter-spacing: 1px;
+    /* color: transparent; */
+}
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-color: lightgreen; */
+    border-bottom-left-radius: 100%;
+}
+
+.page1 > video{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    background-position: center;
+    /* background-size: cover; */
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    /* background-color: lightblue; */
+    padding: 8vw 5vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-family: "gilroy";
+    flex-direction: column;
+}
+
+.page2 > h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.1vw;
+    /* margin-bottom: 6vmax; */
+}
+
+.page2-contant{
+    width: 80%;
+    height: 40vh;
+    /* background-color: red; */
+    margin-left: 8.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6vmax;
+}
+
+.left-page2{
+    height: 100%;
+    width: 40%;
+    background-color: #F8F8F8;
+    border-radius: 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.blur{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.325);
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 9;
+}
+
+.left-page2 > img{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 30vh;
+}
+
+
+.right-page2{
+    height: 100%;
+    width: 51%;
+    /* background-color: lightcoral; */
+    border-radius: 5%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.right-page2 > h1{
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+.right-page2 > p {
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+.right-page2 > button {
+    padding: 10px 20px;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.page3{
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    position: relative;
+    /* background-color: white; */
+}
+
+.page3-contant{
+    width: 80%;
+    height: 60vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: white; */
+    /* background: white; */
+    /* color: black; */
+}
+
+.left-page3{
+    width: 45%;
+    height: 45vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+}
+
+.left-page3 > h2{
+    font-size: 2.7vw;
+    font-family: archi;
+    font-weight: 500;
+    /* color: black; */
+}
+
+.left-page3 > p {
+    font-family: "gilroy";
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.left-page3 > button{
+    padding: 10px 20px;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.right-page3{
+    width: 40%;
+    height: 43vh;
+    background-color: blue;
+    border-radius: 5%;
+}
+
+.right-page3 > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.page4{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://github.com/saarthack/brain-space/blob/main/bg.png?raw=true);
+    object-fit: cover;
+    /* height: 100vh; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 30vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.top-h1{
+    font-weight: 400;
+    font-family: "gilroy";
+    font-size: 1.8vw;
+    margin-left: 44%;
+    letter-spacing: 2px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+    /* justify-content: center; */
+    position: absolute;
+    margin-top: 2vw;
+    /* background-image: none; */
+    /* margin-bottom: 3vmax; */
+}
+
+.page4-top{
+    width: 100%;
+    height: 100px;
+}
+
+.halmet{
+    width: 100%;
+}
+
+
+.page4-c1{
+    width: 43%;
+    height: 37vh;
+    /* background-color: lightcyan; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 57vh;
+}
+
+.page4-c1 > h1{
+    font-family: "archi";
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.page4-c1 > p{
+    font-size: 1.3vw;
+    font-family: "gilroy";
+    font-weight: 100;
+}
+
+.page4-c1 > button{
+    padding: 10px 20px;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.page4-c2{
+    width: 80%;
+    height: 40vh;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 19vh;
+    margin-top: 10vh;
+}
+
+.c2-left{
+    font-family: "archi";
+    font-weight: 100;
+    width: 50%;
+    height: 84%;
+    /* background-color: lightcoral; */
+}
+
+.c2-left > h1{
+    font-size: 1.7vw;
+}
+
+.c2-right{
+    width: 37%;
+    height: 84%;
+    /* background-color: lightseagreen; */
+    
+}
+
+.c2-right > video{
+    height: 100%;
+    width: 100%;
+    border-radius: 7%;
+}
+
+.page4-c3{
+    width: 80%;
+    height: 40vh;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 19vh;
+    margin-top: 10vh;
+}
+
+.c3-left{
+    width: 37%;
+    height: 84%;
+    /* background-color: lightseagreen; */
+}
+
+.c3-left > video{
+    height: 100%;
+    width: 100%;
+    border-radius: 7%;
+}
+
+.c3-right{
+    font-family: "archi";
+    font-weight: 100;
+    width: 50%;
+    height: 84%;
+    /* background-color: lightcoral; */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.c3-right > p{
+    font-size: 1.7vw;
+}
+
+.c3-right > button{
+    padding: 10px 20px;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.page4-c4{
+    width: 80%;
+    height: 40vh;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 19vh;
+    margin-top: 10vh;
+}
+
+.c4-right{
+    width: 37%;
+    height: 84%;
+    /* background-color: lightseagreen; */
+}
+
+.c4-right > video{
+    height: 100%;
+    width: 100%;
+    border-radius: 7%;
+}
+
+.c4-left{
+    font-family: "archi";
+    font-weight: 100;
+    width: 50%;
+    height: 84%;
+    /* background-color: lightcoral; */
+    /* display: flex; */
+    /* align-items: start; */
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+}
+
+.c4-left > p{
+    font-size: 1.7vw;
+}
+
+.page4-c5{
+    width: 80%;
+    height: 40vh;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 19vh;
+    margin-top: 10vh;
+}
+
+.c5-left{
+    width: 37%;
+    height: 84%;
+    /* background-color: lightseagreen; */
+}
+
+.c5-left > video{
+    height: 100%;
+    width: 100%;
+    border-radius: 7%;
+}
+
+.c5-right{
+    font-family: "archi";
+    font-weight: 100;
+    width: 50%;
+    height: 84%;
+    /* background-color: lightcoral; */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.c5-right > p{
+    font-size: 1.7vw;
+}
+
+.c5-right > button{
+    padding: 10px 20px;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.page5{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem_bg.jpg);
+    /* object-fit: cover; */
+    /* background-position: center; */
+    background-size: cover ;
+    /* padding-top: 8rem; */
+}
+
+.page5-top{
+    width: 100%;
+    height: 10vh;
+    font-family: "archi";
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.page5-top > h5{
+    font-size: 1.3rem;
+    color: white;
+    font-size: 100;
+    letter-spacing: 0.2vw;
+}
+
+.page5-contant{
+    width: 100%;
+    height: 100vh;
+    /* background-color: lightgreen; */
+    padding: 8vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.page5-info{
+    width: 30vw;
+    height: 80%;
+    /* background-color: lightcyan; */
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: "archi";
+}
+
+.page5-info > h1{
+    font-size: 2.7vw;
+}
+
+.page5-info > button{
+    padding: 10px 20px;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.page5-elmes {
+    flex-shrink: 0;
+    height: 100%;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.182);
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem-box_bg_mob.svg);
+    -webkit-mask-position: bottom;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    backdrop-filter: blur(20px);
+    padding: 2vw;
+    margin: 0 3vw;
+}
+
+.page4-elems h1{
+    font-family: archi;
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.page5-elmes > img{
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1vw;
+    
+}
+
+
+.slider{
+    height: 5px;
+    width: 59%;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 0.2%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%,0);
+    overflow: hidden;
+}
+.slider-in{
+    height: 100%;
+    width: 17vw;
+    background-color: black;
+}
